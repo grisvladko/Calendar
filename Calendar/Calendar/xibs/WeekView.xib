@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qCQ-FO-Yh6" customClass="WeekView" customModule="Calendar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5c-B5-2aH">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4j-jq-LF5" customClass="MyInfiniteScrollView" customModule="Calendar" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="27" width="414" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="contentLayoutGuide" id="9at-cd-luF"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="2I1-LO-zEd"/>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dsa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ary-Xd-jPq">
+                    <rect key="frame" x="59" y="75" width="296" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="c5c-B5-2aH" firstAttribute="centerX" secondItem="Ary-Xd-jPq" secondAttribute="centerX" id="4jI-no-FlS"/>
+                <constraint firstItem="Ary-Xd-jPq" firstAttribute="bottom" secondItem="WXK-gJ-3Jh" secondAttribute="bottom" id="7My-Qh-tnT"/>
+                <constraint firstItem="c5c-B5-2aH" firstAttribute="centerX" secondItem="qCQ-FO-Yh6" secondAttribute="centerX" id="LPk-7J-sDE"/>
+                <constraint firstItem="Ary-Xd-jPq" firstAttribute="leading" secondItem="WXK-gJ-3Jh" secondAttribute="leading" constant="59" id="X1g-Yc-nWY"/>
+                <constraint firstItem="c5c-B5-2aH" firstAttribute="leading" secondItem="qCQ-FO-Yh6" secondAttribute="leading" id="bbB-Ji-5AL"/>
+                <constraint firstItem="c5c-B5-2aH" firstAttribute="top" secondItem="qCQ-FO-Yh6" secondAttribute="top" id="fdw-qg-0Gc"/>
+                <constraint firstAttribute="bottom" secondItem="c5c-B5-2aH" secondAttribute="bottom" constant="76" id="mp7-4Y-ubj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="WXK-gJ-3Jh"/>
+            <connections>
+                <outlet property="selectedDate" destination="Ary-Xd-jPq" id="Nuv-at-Ysy"/>
+            </connections>
+            <point key="canvasLocation" x="53.623188405797109" y="-180.13392857142856"/>
+        </view>
+    </objects>
+</document>
