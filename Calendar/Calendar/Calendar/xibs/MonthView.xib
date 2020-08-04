@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MonthView" customModule="Calendar" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MonthView" id="gde-GH-G54" customClass="MonthView" customModule="Calendar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rgY-Ic-7f4">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="414" id="bDB-I4-bRM"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lt2-6A-0dk">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="gde-GH-G54" id="Dgl-d9-sMH"/>
+                        <outlet property="delegate" destination="gde-GH-G54" id="ADK-Hw-FXv"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="rgY-Ic-7f4" firstAttribute="top" secondItem="gde-GH-G54" secondAttribute="top" id="A4s-T7-Y3r"/>
+                <constraint firstItem="rgY-Ic-7f4" firstAttribute="trailing" secondItem="NFP-GR-z1B" secondAttribute="trailing" id="YfL-sh-iUO"/>
+                <constraint firstItem="rgY-Ic-7f4" firstAttribute="leading" secondItem="NFP-GR-z1B" secondAttribute="leading" id="hy3-oQ-16B"/>
+                <constraint firstItem="rgY-Ic-7f4" firstAttribute="bottom" secondItem="NFP-GR-z1B" secondAttribute="bottom" constant="-50" id="tYE-CR-Ylo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="NFP-GR-z1B"/>
+            <point key="canvasLocation" x="144.92753623188406" y="-173.4375"/>
+        </view>
+    </objects>
+</document>
